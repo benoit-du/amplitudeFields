@@ -2,7 +2,7 @@
 %%% Benoit Duchet, University of Oxford
 
 %%% This script can be used to calculate the Hilbert amplitude field
-%%% associated with first dimension of a two-dimensional dynamical
+%%% associated with the first dimension of a two-dimensional dynamical
 %%% system. The present code assumes complex conjugate eigenvalues, 
 %%% however this requirement could be lifted with simple modifications 
 %%% to the code). A two-dimensional Wilson-Cowan (WC) model is implemented 
@@ -11,9 +11,9 @@
 %%% following:
 %%% - modify the function "getJacobian.m" based on your model
 %%% - modify "fwdSimModel.m". In the WC example, fwdSimModel calls
-%%%   a C implementation of the Euler-Maruyama method. This is a faster 
+%%%   a C implementation of the Euler-Maruyama method. This is faster 
 %%%   than Matlab code.
-%%% - provide the model parameters to used in a matfile (see parFname), 
+%%% - provide in a matfile the model parameters to use (see parFname), 
 %%%   including the noise standard deviation as the last element of par 
 %%% - adapt the script parameters to your problem (in particular the
 %%%   coordinates of the grid where the isostable field should be computed, 

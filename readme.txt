@@ -5,7 +5,6 @@ This package can be used to compute the isostable and Hilbert amplitude fields
 associated with the basin of attraction of a two-dimensional dynamical system 
 with complex conjugate eigenvalues. A two-dimensional Wilson-Cowan (WC) model 
 is implemented in the relevent functions in the "modules" folder as an example.
-For more details, see TBU
 *************************************************
 *** isostableAmpField_2D_FP.m computes isostable amplitude fields.
 
@@ -15,8 +14,8 @@ For more details, see TBU
 
 *** Please send any comment or suggestion to benoit.duchet@ndcn.ox.ac.uk
 *************************************************
-Note: Non-Windows users should mex the c-file provided prior to running the 
-scripts. To this end,
+Note: Non-Windows users should compile ("mex") the c-file provided prior to running the 
+example scripts. To this end,
 	- set 'modules' as the current folder in Matlab
 	- run the following command
 			mex fwdSimEulerMaruyama_WC.c

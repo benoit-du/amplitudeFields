@@ -14,14 +14,14 @@
 %%%   scheme, modify "fwdSimModel.m". In the WC example, fwdSimModel calls
 %%%   a C implementation of the Euler-Maruyama method (the stochastic part
 %%%   is not used for isostable fields). 
-%%% - provide the model parameters to used in a matfile (see parFname)
+%%% - provide in a matfile the model parameters to use (see parFname)
 %%% - adapt the script parameters to your problem (in particular the
 %%%   coordinates of the grid where the isostable field should be computed, 
 %%%   a rough guess of the fixed point position, and the isostable
-%%%   computation parameters n  and dt).
+%%%   computation parameters n and dt).
 %%%
 %%% The computation method used in this script is based on 
-%%% "Mauroy, A., Mezi?, I., & Moehlis, J. (2013). Isostables, 
+%%% "Mauroy, A., Mezic, I., & Moehlis, J. (2013). Isostables, 
 %%% isochrons, and Koopman spectrum for the action–angle representation of
 %%% stable fixed point dynamics. Physica D: Nonlinear Phenomena, 261,
 %%% 19-30.".
@@ -43,7 +43,7 @@ X_1_grid        = 0.25:1E-3:0.55; %vector of X_1 values where the isostable fiel
 X_2_grid        = 0.25:1E-3:0.5; %vector of X_2 values where the isostable field should be evaluated 
 X_FP_guess      = [0 0]; %rough guess of the fixed point coordinates
 dt              = 1E-3; %model integration time step
-n               = 5; %number of periods used to approximate the isostable amplitude field (see equation (4) for more details)
+n               = 5; %number of periods used to approximate the isostable amplitude field
 useOde45        = false; %if true, model integration will be carried out using fwdSimModel_ode45, if false fwdSimModel will be used (Euler-Maruyama method in the Wilson-Cowan example provided) 
 abstol          = 1E-12; %absolute tolerance used by ode45
 reltol          = 1E-12; %relative tolerance used by ode45
